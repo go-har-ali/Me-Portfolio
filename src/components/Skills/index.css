@@ -1,0 +1,109 @@
+/* Yahan se Game Start ha */
+.skills-page {
+    padding-left: 5vw; /* Use viewport units for padding */
+    padding-right: 5vw;
+    width: auto; /* Adjust width to be automatic */
+    max-width: 900px; /* Max width so it doesn't grow too large */
+    margin: auto; /* Center the skills-page div */
+    position: initial;
+    height: 100%;
+    overflow: auto;
+    box-sizing: border-box; /* Include padding in width calculation */
+
+    h1.page-title {
+        margin-left: 3vw; /* Adjusted margin using viewport units */
+        margin-top: 50px;
+    }
+}
+
+.skills-page .items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+    height: 65%;
+    padding: 0; /* Remove padding that might cause overflow */
+}
+
+.skills-page .items .item {
+    width: 25%;
+    background-color: black;
+    margin: 15px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid yellow;
+    box-shadow: 0 4px 10px yellow;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box; /* Include padding in width calculation */
+
+        /* Add animation for 2 rotations */
+        animation: rotateCard 3s ease-in-out forwards;
+        animation-delay: calc(0.1s * var(--item-order));
+}
+
+/* Keyframes to rotate the card 2 times */
+@keyframes rotateCard {
+    0% {
+        transform: rotateY(90deg);  /* Initial rotation */
+        opacity: 0;
+    }
+    50% {
+        transform: rotateY(360deg); /* Full first rotation */
+        opacity: 1;
+    }
+    100% {
+        transform: rotateY(720deg); /* Full second rotation */
+        opacity: 1;
+    }
+}
+
+.skills-page .items .item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px yellow;
+}
+
+.skills-page .items .item img {
+    width: 60px;
+}
+
+h3 {
+    color: white;
+    font-size: 1.2em;
+}
+
+/* Adjust styles for mobile responsiveness */
+@media screen and (max-width: 768px) {
+    .skills-page {
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 100%; /* Ensure it fits the viewport width */
+    }
+
+    .skills-page .items .item {
+        width: 45%; /* Adjust item width for smaller screens */
+    }
+
+    .skills-page .items .item img {
+        width: 50px;
+    }
+
+    h3 {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .skills-page .items .item {
+        width: 90%; /* Make items take up more space */
+    }
+
+    .skills-page .items .item img {
+        width: 40px;
+    }
+
+    h3 {
+        font-size: 0.8em;
+    }
+}

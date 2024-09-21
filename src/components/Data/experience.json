@@ -1,0 +1,28 @@
+[
+  {
+    "id": 1,
+    "role": "React JS Developer at CodexCue",
+    "organisation": "CodexCue",
+    "startDate": "aug, 2024",
+    "endDate": "sep, 2024",
+    "location": "Remote",
+    "experiences": [
+      "Worked on React JS and Redux completed 4 projects",
+      "Worked with the Google Bard Team"
+    ],
+    "imageSrc": "company/google.png"
+  },
+  {
+    "id": 2,
+    "role": "MERN Stack Developer at Ecodecamp",
+    "organisation": "Ecodecamp",
+    "startDate": "sep, 2024",
+    "endDate": "Present",
+    "location": "Remote",
+    "experiences": [
+      "Worked on React and Node js",
+      "Worked on Window 11 Upcoming features"
+    ],
+    "imageSrc": "company/microsoft.png"
+  }
+]

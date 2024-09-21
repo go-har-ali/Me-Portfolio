@@ -1,0 +1,108 @@
+.projects-page {
+    padding: 0 5vw;
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+    height: 100%;
+    overflow: auto;
+    box-sizing: border-box;
+
+    h1.page-title {
+        margin-top: 50px;
+        text-align: center;
+    }
+}
+
+.card-custom {
+    width: 100%; /* Full width by default */
+    max-width: 30rem; /* Increased max width on larger screens */
+    height: auto; /* Allow height to be determined by content */
+    min-height: 35rem; /* Minimum height for all cards */
+    background-color: #333;
+    border: 1px solid yellow;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Arrange children vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; 
+
+
+
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px yellow;
+    }
+
+    .card-img-top {
+        height: 150px; /* Maintain height for small screens */
+        width: auto; /* Set width to auto to keep the aspect ratio */
+        max-width: 100%; /* Ensure it doesn't overflow the card */
+        border: 2px solid yellow;
+        border-radius: 10px;
+        object-fit: cover; /* Maintain the cover aspect */
+        display: block; /* Ensure it's a block element */
+        margin: 20px auto 0; /* Add top margin and center the image */
+    }
+}
+
+
+/* Responsive design adjustments */
+@media (min-width: 992px) {
+    /* Large screens: Adjust card width to look more organized */
+    .card-custom {
+        width: 100%;
+        max-width: 22rem; /* Slightly larger on bigger screens */
+    }
+}
+
+@media (max-width: 768px) {
+    /* Medium screens: Cards adjust accordingly */
+    .projects-page {
+        padding: 0 3vw;
+    }
+
+    .card-custom {
+        max-width: 100%; /* Take full width on medium screens */
+    }
+
+    .card-img-top {
+        height: 180px;
+        width: 180px;
+    }
+
+    .card-title {
+        font-size: 1.5rem;
+    }
+
+    .card-text {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Small screens: Further reduce the card and image sizes */
+    .card-custom {
+        width: 100%;
+    }
+
+    .card-img-top {
+        height: 150px;
+        width: 150px;
+    }
+
+    .card-title {
+        font-size: 1.3rem;
+    }
+
+    .card-text {
+        font-size: 1.1rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+    }
+}
