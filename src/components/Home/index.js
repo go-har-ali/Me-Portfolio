@@ -6,6 +6,7 @@ import AnimatedLetters from '../AnimatedLetters'
 import { useState } from 'react'
 import me from '../../assets/me.jpg'
 import Loader from 'react-loaders'
+import pdf from '../pdf/Resume-Me-Updated.pdf'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -59,6 +60,9 @@ const Home = () => {
           <Link to="/contact" className="flat-button">
             CONTACT ME
           </Link>
+          <a href={pdf} download="Resume.pdf" className="resume-button">
+            Download Resume
+          </a>
         </div>
         <div className="right">
           <div className="img">

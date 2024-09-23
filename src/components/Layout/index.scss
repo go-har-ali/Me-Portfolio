@@ -107,8 +107,9 @@
             width: 35%;
             vertical-align: middle;
             display: table-cell;
-            max-height: 90%;
-    }
+            max-height: 90%;  
+            
+        }
 
     .text-animate-hover {
         &:hover {
@@ -116,6 +117,7 @@
         }
     }
 }
+
 
 @media screen and (max-width: 1200px) {
 
@@ -143,3 +145,78 @@
     }
     
 }
+
+/* For tablets and smaller screens (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .container {
+        height: auto;
+        top: auto;
+        min-height: auto;
+        padding: 0 20px;
+    }
+
+    .text-zone {
+        position: static; /* Reset positioning */
+        transform: none;
+        width: 100%; /* Make text zone full width */
+        max-height: none; /* Allow full content height */
+        display: block;
+        text-align: center; /* Center text on small screens */
+        margin-bottom: 50px; /* Add space below text-zone to prevent overlap */
+    }
+
+    .text-zone h1 {
+        font-size: 36px; /* Reduce heading size */
+    }
+
+    .text-zone p {
+        font-size: 14px; /* Adjust paragraph font size */
+        text-align: justify; /* Make text more readable */
+    }
+}
+
+/* For mobile screens (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .text-zone {
+        margin-bottom: 80px; /* Increase space between text and icons */
+        padding-bottom: 20px; /* Add padding to the bottom for better spacing */
+    }
+
+    .text-zone h1 {
+        font-size: 28px; /* Further reduce heading size */
+    }
+
+    .text-zone p {
+        font-size: 12px; /* Further reduce paragraph font size */
+        line-height: 1.4; /* Improve line height for readability */
+    }
+}
+
+// .about-ul {
+//     position: absolute;
+//     bottom: 0px;
+//     top: 370px;
+//     width: 100%;
+//     display: flex; 
+//     justify-content: center; 
+//     padding: 0;
+//     list-style: none;
+//     margin: 0;
+// }
+
+// .about-ul li {
+//     margin-left: 20px; 
+//     margin-bottom: 0px;
+// }
+
+// .about-ul li a {
+//     padding: 7px 0;
+//     display: block;
+//     font-size: 30px;
+//     line-height: 16px;
+
+// }
+
+// .about-ul li a:hover svg {
+//     color: #ffd700;
+// }

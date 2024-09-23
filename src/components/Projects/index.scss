@@ -86,7 +86,8 @@
 @media (max-width: 576px) {
     /* Small screens: Further reduce the card and image sizes */
     .card-custom {
-        width: 100%;
+        width: 80%;
+        margin-bottom: 20px;
     }
 
     .card-img-top {

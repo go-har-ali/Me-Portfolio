@@ -61,7 +61,8 @@
         animation: fadeIn 1s 1.8s backwards;
     }
 
-    .flat-button {
+    .flat-button,
+    .resume-button {
         color:#ffd700;
         font-size: 13px;
         font-weight: 400;
@@ -79,6 +80,10 @@
             background: #ffd700;
             color: #333;
         }
+    }
+
+    .resume-button {
+      margin-left: 15px;
     }
 }
 
@@ -225,8 +230,8 @@
     }
   
     .img {
-      width: 50%; /* Reduce image size */
-      max-width: 180px; /* Limit max image size */
+      width: 100%; /* Reduce image size */
+      max-width: 380px; /* Limit max image size */
     }
   
     h1 {
@@ -256,8 +261,17 @@
     }
   
     .img {
-      width: 40%; /* Further reduce image size */
-      max-width: 120px; /* Limit max image size */
+      width: 100%; /* Maintain responsive image */
+      max-width: 320px; /* Limit max image size */
+      display: block; /* Block-level to apply margin */
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+
+    .right {
+      text-align: center;
+      margin: 0;
     }
   
     h1 {

@@ -96,7 +96,7 @@ h3 {
 
 @media screen and (max-width: 480px) {
     .skills-page .items .item {
-        width: 90%; /* Make items take up more space */
+        width: 50%; /* Make items take up more space */
     }
 
     .skills-page .items .item img {
